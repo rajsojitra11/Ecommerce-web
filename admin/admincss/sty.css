@@ -1,0 +1,95 @@
+/* Registration Container */
+.reg-container {
+    background-color: rgba(51, 49, 64, 0.8); /* Set transparency */
+    padding: 40px;
+    border-radius: 30px;
+    max-width: 600px; /* Maintain max-width */
+    width: 90%; /* Default to 90% for better responsiveness */
+    text-align: center;
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px; /* Reduced space for better alignment */
+    font-size: 28px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center input boxes horizontally */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    padding: 8px; /* Decreased padding for height */
+    margin-bottom: 20px; /* Reduced margin for compactness */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    width: 90%; /* Input box width relative to container */
+    min-height: 35px; /* Set minimum height for input boxes */
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px; /* Adjusted margin */
+    padding: 10px; /* Adjusted padding */
+    background-color: #2fa556;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease;
+    min-height: 40px; /* Set minimum height for the button */
+}
+
+button:hover {
+    background-color: #0e7728;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 26px; /* Slightly smaller on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px; /* Further decrease for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 14px; /* Maintain font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .reg-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px; /* Further decrease for mobile */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 12px; /* Smaller font size */
+        padding: 8px; /* Adjusted padding for height */
+    }
+
+    .options {
+        font-size: 12px; /* Ensure consistency with smaller text */
+    }
+}

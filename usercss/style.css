@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://ecommercefastlane.com/wp-content/uploads/2024/08/digital-ecommerce.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 10%; /* Adjust padding to create left-side space */
+  color: #ffffff;
+}
+
+/* Login/Registration Container */
+.login-container, .reg-container {
+  background-color: rgba(74, 70, 101, 0.8); /* Set transparency */
+  padding: 40px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px; /* Fixed max-width */
+  text-align: center;
+  margin: 20px 0; /* Vertical spacing */
+  position: relative;
+  left: 0;
+  background: transparent;
+  border: 2px solid rgb(181, 180, 180);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center input boxes horizontally */
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  width: 90%; /* Input box width relative to container */
+}
+
+/* Button Styling */
+button {
+  padding: 10px;
+  background-color: #dc6e1a;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 90%;
+  transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #91530c;
+  color: #fff;
+  transition: all 1s;
+}
+
+/* Options Section */
+.options {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.options a {
+  color: #ffc091;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Label Styling */
+label {
+  padding-right: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  body {
+    padding-left: 5%; /* Reduce padding on smaller screens */
+  }
+
+  .login-container, .reg-container {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding-left: 5%; /* Adjust padding */
+  }
+
+  .login-container, .reg-container {
+    width: 90%; /* Take up more screen space on smaller devices */
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .login-container, .reg-container {
+    padding: 15px;
+    max-width: 90%; /* Full width for mobile */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .options {
+    font-size: 12px;
+  }
+}
