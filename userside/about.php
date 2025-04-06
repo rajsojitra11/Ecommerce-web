@@ -9,14 +9,6 @@ if (isset($_SESSION['id'])) {
    $user_id = '';
 };
 
-// session_start();
-
-// if (isset($_SESSION['user_id'])) {
-//    $user_id = $_SESSION['user_id'];
-// } else {
-//    $user_id = '';
-// };
-
 ?>
 
 <!DOCTYPE html>
@@ -179,8 +171,8 @@ if (isset($_SESSION['id'])) {
             clickable: true,
          },
          autoplay: {
-            delay: 2000, // 7000ms = 2 seconds
-            disableOnInteraction: false, // This ensures autoplay does not stop after user interaction
+            delay: 2000,
+            disableOnInteraction: false,
          },
          breakpoints: {
             0: {

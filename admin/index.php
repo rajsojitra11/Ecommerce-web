@@ -11,48 +11,44 @@ include('../config/conn.php');
 
 ?>
 <?php
-// Query to get the count of pending orders
+
 $sql = "SELECT COUNT(*) AS pending_count FROM `orders` WHERE `pyment_staus` = 'Pending'";
 
-// Execute the query
+
 $result = $conn->query($sql);
 
-// Check if the query was successful
+
 if ($result) {
-  // Fetch the result as an associative array
+
   $row = $result->fetch_assoc();
 
-  // Output the count of 'Pending' payment status
+
   $pendingCount = $row['pending_count'];
 }
 
-// Query to get the count of completed orders
 $sq = "SELECT COUNT(*) AS completed_count FROM `orders` WHERE `pyment_staus` = 'completed'";
 
-// Execute the query
 $res = $conn->query($sq);
 
-// Check if the query was successful
 if ($res) {
-  // Fetch the result as an associative array
+
   $ro = $res->fetch_assoc();
 
-  // Output the count of 'Completed' payment status
-  $completedCount = $ro['completed_count'];  // Fixing the typo here
+
+  $completedCount = $ro['completed_count'];
 }
 
-// Query to get the total number of orders
+
 $totalOrdersSql = "SELECT COUNT(*) AS total_count FROM `orders`";
 
-// Execute the query for total orders
+
 $totalResult = $conn->query($totalOrdersSql);
 
-// Check if the query was successful
 if ($totalResult) {
-  // Fetch the result as an associative array
+
   $totalRow = $totalResult->fetch_assoc();
 
-  // Output the total number of orders
+
   $totalOrders = $totalRow['total_count'];
 }
 
