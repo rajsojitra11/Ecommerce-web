@@ -1,3 +1,16 @@
+## A simple and effective **e‑commerce website built with core PHP**
+---
+
+## ⭐ Key Features
+
+- Dynamic product listing with images and prices
+- User registration and login functionality
+- Shopping cart: add, update, and remove items
+- Admin panel for product management (add, edit, delete)
+- Clean, responsive UI using core HTML/CSS (optionally Bootstrap)
+
+---
+
 ## 🚀 Live Preview
 ## Admin :
 ## 🔐 Login Page
